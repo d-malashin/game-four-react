@@ -1,0 +1,5 @@
+.game-field__column {
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 0;
+}

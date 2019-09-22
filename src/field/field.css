@@ -1,0 +1,12 @@
+.app__wrapper {
+    width: 1080px;
+    margin: 0 auto;
+}
+.game-field {
+    margin: 0 auto;
+    max-width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #000;
+}
