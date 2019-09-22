@@ -8,5 +8,7 @@ export default function Field (props) {
         result.splice(i, 0, <Column data={props.field[i]} key={i} />)
         console.log(props.field[i]);
     };
-    return <div className="app__wrapper"><div className="game-field" >{result}</div></div>;
+    return <div className="app__wrapper">
+        <div className="game-field" >{result}</div>
+    </div>;
 };

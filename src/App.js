@@ -1,6 +1,6 @@
 import React from 'react';
 import Field from './field';
-// import './App.css';
+import './App.css';
 
   function App() {
   const field = [
