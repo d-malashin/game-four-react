@@ -1,12 +1,18 @@
 import React from 'react';
-import Cell from '../cell';
+import {Cell} from '../cell';
 import './column.css';
 
 
-export default function Column (props) {
-    let cellsData = props.data;
-    let cells = cellsData.map(value => <Cell value = {props.data} />);
-    return cells;
+export const Column = (props) => {
+    const column = props.data
+    return (
+        <div className="game-field__column">
+        {column.map((cell, index) => (
+            <Cell value = {cell} key = {index} />
+        ))}
+        </div>
+    )
+}
     // let result = [];
     // for (let i = 0; i < 6; i++) {
     //     result.splice(i, 0, <Cell value={props.data[i]} key={i} />)
@@ -23,4 +29,3 @@ export default function Column (props) {
     //     <Cell value={props.data[4]} />
     //     <Cell value={props.data[5]} />
     //     </div>
-};

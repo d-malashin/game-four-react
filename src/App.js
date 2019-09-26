@@ -1,5 +1,5 @@
 import React from 'react';
-import Field from './field';
+import {Field} from './field';
 import './App.css';
 
   function App() {
@@ -13,7 +13,7 @@ import './App.css';
     [1, 0, 0, 0, 0, 0]
   ];
   return <div>
-    <Field field={field} />
+    <Field field = {field} />
     </div>;
 };
 export default App;

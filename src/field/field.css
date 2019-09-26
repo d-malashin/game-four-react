@@ -1,10 +1,6 @@
-.app__wrapper {
-    width: 1080px;
-    margin: 0 auto;
-    margin-top: 50px;
-}
 .game-field {
     margin: 0 auto;
+    margin-top: 50px;
     max-width: 300px;
     display: flex;
     flex-direction: row;
