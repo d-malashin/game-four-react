@@ -2,19 +2,18 @@ import React from 'react';
 import Cell from '../cell';
 import './column.css';
 
-function playerTurn (props) {
-    console.log('hi');
-    return <Cell value='1' />
-};
 
 export default function Column (props) {
-    let result = [];
-    for (let i = 0; i < 6; i++) {
-        result.splice(i, 0, <Cell value={props.data[i]} key={i} />)
-    };
-    return <div className="game-field__column"  onClick={playerTurn}>
-        {result}
-    </div>;
+    let cellsData = props.data;
+    let cells = cellsData.map(value => <Cell value = {props.data} />);
+    return cells;
+    // let result = [];
+    // for (let i = 0; i < 6; i++) {
+    //     result.splice(i, 0, <Cell value={props.data[i]} key={i} />)
+    // };
+    // return <div className="game-field__column"  onClick={playerTurn}>
+    //     {result}
+    // </div>;
 
     // return <div className="game-field__column">
     //     <Cell value={props.data[0]} />
