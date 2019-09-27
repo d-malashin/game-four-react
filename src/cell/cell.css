@@ -1,9 +1,17 @@
 .game-field__cell {
-    height: 25px;
-    width: 25px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 5px;
-    font-size: 10px;
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+  font-size: 0px;
+}
+
+.player-one {
+  background-color: red;
+}
+
+.player-two {
+  background-color: yellow;
 }

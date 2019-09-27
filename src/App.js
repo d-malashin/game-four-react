@@ -1,19 +1,11 @@
 import React from 'react';
-import {Field} from './field';
+import { Field } from './field';
 import './App.css';
 
-  function App() {
-  const field = [
-    [1, 0, 0, 0, 0, 0],
-    [2, 1, 0, 0, 0, 0],
-    [1, 0, 0, 0, 0, 0],
-    [2, 2, 0, 0, 0, 0],
-    [1, 0, 0, 0, 0, 0],
-    [1, 2, 1, 0, 0, 0],
-    [1, 0, 0, 0, 0, 0]
-  ];
+function App() {
+  const field = new Array(7).fill(new Array(6).fill(null));
   return <div>
-    <Field field = {field} />
-    </div>;
+    <Field field={field} />
+  </div>;
 };
 export default App;
