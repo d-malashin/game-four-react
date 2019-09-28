@@ -2,8 +2,11 @@ import React from 'react';
 import './cell.css';
 
 export const Cell = (props) => {
-  const cell = props.value;
+  let value = props.value;
   return (
-    <span className={"game-field__cell " + (props.turn === 1 ? 'player-one' : (props.turn === 2 ? 'player-two' : ''))}>{cell}</span>
+    <span className={"game-field__cell " + (value === 1 ? 'player-one' : (value === 2 ? 'player-two' : ''))}
+    onClick={() => {
+      props.onClick();
+      value = props.turn}}></span>
   )
 }

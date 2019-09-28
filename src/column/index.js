@@ -10,6 +10,7 @@ export const Column = (props) => {
         <Cell value={cell}
           key={index}
           turn={props.turn}
+          onClick={() => {props.onClick()}}
         />
       ))}
     </div>
