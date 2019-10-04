@@ -2,7 +2,7 @@ import React from 'react';
 import Game from './game/game';
 import { HashRouter, Route } from 'react-router-dom';
 import './App.css';
-import WelcomeScreen from './wolcomeScreen';
+import WelcomeScreen from './welcomeScreen';
 
 function App() {
   return ( 

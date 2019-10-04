@@ -13,38 +13,37 @@ export default function Game(props) {
           field[columnID][i] === field[columnID][i+1] &&
           field[columnID][i] === field[columnID][i+2] &&
           field[columnID][i] === field[columnID][i+3]) {
-            alert(`${player} wins!`)
-            return (<Redirect to='/' />)
+            alert(`Player ${player} wins!`)
+            return player
           } console.log('still no winner')
     }
+  }
 
-  }
-  const array = new Array(6).fill(null);
-  const parent = []
+  const gameColumn = new Array(6).fill(null);
+  const gameField = []
   for (let w = 0; w < 7; w++) {
-    parent.push([...array])
+    gameField.push([...gameColumn])
   }
-  const [field, setField] = useState(parent);
-  const [player, setPlayer] = useState(1);
+  const [field, setField] = useState(gameField)
+  const [player, setPlayer] = useState(1)
 
   function move(columnID) {
-    console.log('Игрок ' + player + ' сделал ход в колонку ' + (columnID + 1));
-    const newField = [...field];
-    console.log('before', newField);
+    console.log('Игрок ' + player + ' сделал ход в колонку ' + (columnID + 1))
+    const newField = [...field]
     const firstNotNull = () => {
       for (let i = 0; i < newField[columnID].length; i++) {
       if (newField[columnID][i] === null) {
-        console.log(newField);
-        console.log(columnID);
         return i;
       } 
-    };
+    }
     }
     newField[columnID][firstNotNull()] = player;
-    console.log('after', newField);
-    setField(newField);
-    setPlayer(player === 1 ? 2 : 1);
-    winnerCheck(columnID);
+    console.log('after', newField)
+    setField(newField)
+    setPlayer(player === 1 ? 2 : 1)
+      return (
+        <Redirect to={{pathname: '/'}} />
+      )
   }
 
   if (!props.location.state) {
@@ -61,5 +60,5 @@ export default function Game(props) {
       onColumnClick={move}
     />
     <Link to='/#' className="game__button-back">End game</Link>
-  </div>;
-};
+  </div>
+}
