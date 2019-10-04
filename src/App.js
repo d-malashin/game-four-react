@@ -1,11 +1,10 @@
 import React from 'react';
-import { Field } from './field';
 import './App.css';
+import Game from './game/game';
 
 function App() {
-  const field = new Array(7).fill(new Array(6).fill(null));
   return <div>
-    <Field field={field} />
+    <Game />
   </div>;
 };
 export default App;
