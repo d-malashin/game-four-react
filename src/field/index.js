@@ -5,15 +5,13 @@ import './field.css'
 export const Field = (props) => {
   const field = props.field
   return (
-    <div className="game-field"
+    <div className="game-field">
       {field.map((column, index) => (
         <Column data={column}
           key={index}
-          turn={turn}
-          onClick={() => {
-            setTurn(turn === 1 ? 2 : 1)
-            console.log(turn)
-          }}))}> />
-      </div >
+          onPress={props.onColumnClick}
+          columnID={index}
+       />
+      ))}</div>
   )
 }
