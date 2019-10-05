@@ -11,7 +11,7 @@ export const Field = (props) => {
           key={index}
           onPress={props.onColumnClick}
           columnID={index}
-       />
+        />
       ))}</div>
   )
 }
