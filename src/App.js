@@ -1,19 +1,16 @@
 import React from 'react';
-import {Field} from './field';
+import Game from './game/game';
+import { HashRouter, Route } from 'react-router-dom';
 import './App.css';
+import WelcomeScreen from './welcomeScreen';
 
-  function App() {
-  const field = [
-    [1, 0, 0, 0, 0, 0],
-    [2, 1, 0, 0, 0, 0],
-    [1, 0, 0, 0, 0, 0],
-    [2, 2, 0, 0, 0, 0],
-    [1, 0, 0, 0, 0, 0],
-    [1, 2, 1, 0, 0, 0],
-    [1, 0, 0, 0, 0, 0]
-  ];
-  return <div>
-    <Field field = {field} />
-    </div>;
-};
+function App() {
+  return ( 
+  <HashRouter>
+    <Route path="/" component={WelcomeScreen} exact/>
+    <Route path="/game" component={Game} exact/>
+  </HashRouter>
+  )
+}
+
 export default App;
