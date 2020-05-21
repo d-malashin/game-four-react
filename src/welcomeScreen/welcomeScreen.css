@@ -1,0 +1,12 @@
+.welcome-screen {
+  text-align: center;
+}
+
+.welcome__header {
+  margin: 0;
+  margin-top: 5rem;
+  padding: 0;
+  text-align: center;
+  font-size: 5rem;
+}
+

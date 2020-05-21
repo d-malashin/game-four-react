@@ -4,7 +4,10 @@
   flex-direction: column;
 }
 
-.game__button-back {
+.wrapper {
+  background-color: slategrey;
+  width: 120rem;
   margin: 0 auto;
-  margin-top: 2rem;
+  padding-bottom: 3rem;
 }
+

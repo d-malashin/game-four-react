@@ -1,6 +1,6 @@
 .game-field {
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 1rem;
     max-width: 300px;
     display: flex;
     flex-direction: row;

@@ -1,0 +1,20 @@
+.game__players {
+  text-align: center;
+}
+.game__current-player {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.players {
+  font-size: 2rem;
+}
+
+.players__player--one {
+  color: red;
+}
+
+.players__player--two {
+  color: yellow;
+}

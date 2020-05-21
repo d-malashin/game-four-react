@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './welcomeScreen.css'
 
 function WelcomeScreen() {
-  return <div>
-    <h1>Welcome</h1>
-    <Link to={{
+  return <div className="welcome-screen">
+    <h1 className="welcome__header">Welcome</h1>
+    <Link className="welcome__button button button--start" to={{
       pathname: '/game',
       state: {
         playerOneName: 'One',
