@@ -10,7 +10,7 @@ export default function Game(props) {
 
   useEffect(function () {
     setInterval(function () {
-      axios.get("http://localhost:3001/game-field").then(function (response) {
+      axios.get("https://a-connect-four-game.herokuapp.com/game-field").then(function (response) {
         setField(response.data);
       });
     }, 2000);
@@ -18,7 +18,7 @@ export default function Game(props) {
 
   function move(columnID) {
     axios
-      .post(`http://localhost:3001/move?column=${columnID}`)
+      .post(`https://a-connect-four-game.herokuapp.com/move?column=${columnID}`)
       .then(function (response) {
         setField(response.data.field);
         response.data.currentPlayer === 2 ? setPlayer(1) : setPlayer(2)
@@ -30,7 +30,7 @@ export default function Game(props) {
   }
 
   function restart() {
-    axios.post(`http://localhost:3001/restart`).then(response => {
+    axios.post(`https://a-connect-four-game.herokuapp.com/restart`).then(response => {
       setField(response.data.field);
       response.data.currentPlayer === 2 ? setPlayer(1) : setPlayer(2)
     });
