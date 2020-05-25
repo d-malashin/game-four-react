@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/game-four-react/static/css/main.1b0c66a8.chunk.css",
-    "main.js": "/game-four-react/static/js/main.05aa5a92.chunk.js",
-    "main.js.map": "/game-four-react/static/js/main.05aa5a92.chunk.js.map",
+    "main.css": "/game-four-react/static/css/main.1ab1dcb2.chunk.css",
+    "main.js": "/game-four-react/static/js/main.3dfb7c05.chunk.js",
+    "main.js.map": "/game-four-react/static/js/main.3dfb7c05.chunk.js.map",
     "runtime-main.js": "/game-four-react/static/js/runtime-main.85006686.js",
     "runtime-main.js.map": "/game-four-react/static/js/runtime-main.85006686.js.map",
     "static/js/2.a2d355c3.chunk.js": "/game-four-react/static/js/2.a2d355c3.chunk.js",
     "static/js/2.a2d355c3.chunk.js.map": "/game-four-react/static/js/2.a2d355c3.chunk.js.map",
     "index.html": "/game-four-react/index.html",
-    "precache-manifest.6a2a02f25841594e5925d5c8c9ddc221.js": "/game-four-react/precache-manifest.6a2a02f25841594e5925d5c8c9ddc221.js",
+    "precache-manifest.5081aca5647c5b6618d1ba465ba2539e.js": "/game-four-react/precache-manifest.5081aca5647c5b6618d1ba465ba2539e.js",
     "service-worker.js": "/game-four-react/service-worker.js",
-    "static/css/main.1b0c66a8.chunk.css.map": "/game-four-react/static/css/main.1b0c66a8.chunk.css.map",
+    "static/css/main.1ab1dcb2.chunk.css.map": "/game-four-react/static/css/main.1ab1dcb2.chunk.css.map",
     "static/js/2.a2d355c3.chunk.js.LICENSE.txt": "/game-four-react/static/js/2.a2d355c3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.85006686.js",
     "static/js/2.a2d355c3.chunk.js",
-    "static/css/main.1b0c66a8.chunk.css",
-    "static/js/main.05aa5a92.chunk.js"
+    "static/css/main.1ab1dcb2.chunk.css",
+    "static/js/main.3dfb7c05.chunk.js"
   ]
 }
